@@ -3,31 +3,10 @@ import '@material/web/iconbutton/icon-button.js';
 import '@material/web/icon/icon.js';
 import '@material/web/list/list-item.js';
 import '@material/web/list/list.js';
+import { gridStyles } from "../styles/global";
 
 class NavigationBar extends LitElement {
-    static styles = css`
-    :host {
-      display: block;
-      --mdc-theme-primary: #6200ea;
-      --mdc-theme-on-primary: white;
-    }
-
-    .app-icon {
-      width: 24px;
-      height: 24px;
-    }
-
-    .nav-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 16px;
-    }
-
-    .nav-item {
-      margin: 0 8px;
-    }
-  `;
+    static styles = [gridStyles, css``];
 
     render() {
         return html`
