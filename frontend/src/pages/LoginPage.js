@@ -2,9 +2,7 @@ import { LitElement, html, css } from 'lit';
 import '@material/web/button/filled-button.js';
 
 class LoginPage extends LitElement {
-    static styles = css`
-    /* Estilos aquí */
-  `;
+    static styles = css``;
 
     handleLogin() {
         const redirectURL = window.location.origin + '/protected';
