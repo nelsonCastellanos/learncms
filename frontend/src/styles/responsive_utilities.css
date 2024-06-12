@@ -34,6 +34,18 @@
     /* Display */
     .d-sm-none { display: none !important; }
     .d-sm-block { display: block !important; }
+
+    /* Width */
+    .w-sm-10 { width: 10%; }
+    .w-sm-20 { width: 20%; }
+    .w-sm-30 { width: 30%; }
+    .w-sm-40 { width: 40%; }
+    .w-sm-50 { width: 50%; }
+    .w-sm-60 { width: 60%; }
+    .w-sm-70 { width: 70%; }
+    .w-sm-80 { width: 80%; }
+    .w-sm-90 { width: 90%; }
+    .w-sm-100 { width: 100%; }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -70,6 +82,19 @@
     /* Display */
     .d-md-none { display: none !important; }
     .d-md-block { display: block !important; }
+
+
+    /* Width */
+    .w-md-10 { width: 10%; }
+    .w-md-20 { width: 20%; }
+    .w-md-30 { width: 30%; }
+    .w-md-40 { width: 40%; }
+    .w-md-50 { width: 50%; }
+    .w-md-60 { width: 60%; }
+    .w-md-70 { width: 70%; }
+    .w-md-80 { width: 80%; }
+    .w-md-90 { width: 90%; }
+    .w-md-100 { width: 100%; }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -106,6 +131,18 @@
     /* Display */
     .d-lg-none { display: none !important; }
     .d-lg-block { display: block !important; }
+
+    /* Width */
+    .w-lg-10 { width: 10%; }
+    .w-lg-20 { width: 20%; }
+    .w-lg-30 { width: 30%; }
+    .w-lg-40 { width: 40%; }
+    .w-lg-50 { width: 50%; }
+    .w-lg-60 { width: 60%; }
+    .w-lg-70 { width: 70%; }
+    .w-lg-80 { width: 80%; }
+    .w-lg-90 { width: 90%; }
+    .w-lg-100 { width: 100%; }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -142,4 +179,16 @@
     /* Display */
     .d-xl-none { display: none !important; }
     .d-xl-block { display: block !important; }
+
+    /* Width */
+    .w-xl-10 { width: 10%; }
+    .w-xl-20 { width: 20%; }
+    .w-xl-30 { width: 30%; }
+    .w-xl-40 { width: 40%; }
+    .w-xl-50 { width: 50%; }
+    .w-xl-60 { width: 60%; }
+    .w-xl-70 { width: 70%; }
+    .w-xl-80 { width: 80%; }
+    .w-xl-90 { width: 90%; }
+    .w-xl-100 { width: 100%; }
 }
