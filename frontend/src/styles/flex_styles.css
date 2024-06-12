@@ -1,0 +1,170 @@
+/* Contenedor Flex */
+.flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+/* Direcciones */
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/* Alineación Horizontal */
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+/* Alineación Vertical */
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+/* Alineación por Contenido */
+.align-content-start {
+    align-content: flex-start;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-end {
+    align-content: flex-end;
+}
+
+.align-content-between {
+    align-content: space-between;
+}
+
+.align-content-around {
+    align-content: space-around;
+}
+
+.align-content-stretch {
+    align-content: stretch;
+}
+
+/* Flex Wrap */
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+/* Orden de Elementos */
+.order-1 { order: 1; }
+.order-2 { order: 2; }
+.order-3 { order: 3; }
+.order-4 { order: 4; }
+.order-5 { order: 5; }
+.order-first { order: -1; }
+.order-last { order: 999; }
+
+/* Flex Crecimiento */
+.flex-grow-0 {
+    flex-grow: 0;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+/* Flex Encogimiento */
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.flex-shrink-1 {
+    flex-shrink: 1;
+}
+
+/* Base Flex */
+.flex-auto {
+    flex: 1 1 auto;
+}
+
+.flex-initial {
+    flex: 0 1 auto;
+}
+
+.flex-none {
+    flex: none;
+}
+
+/* Padding */
+.p-0 {
+    padding: 0 0;
+}
+
+.p-1 {
+    padding: 0 var(--padding-small);
+}
+
+.p-2 {
+    padding: 0 var(--padding-medium);
+}
+
+.p-3 {
+    padding: 0 var(--padding-large);
+}
+
+.p-4 {
+    padding: 0 var(--padding-xlarge);
+}
+
+.p-5 {
+    padding: 0 var(--padding-xxlarge);
+}
+
+.text-center {
+    text-align: center;
+}
