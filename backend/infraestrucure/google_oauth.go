@@ -84,7 +84,7 @@ func HandleGoogleCallback(w http.ResponseWriter, r *http.Request) {
 		Expires:  time.Now().Add(24 * time.Hour),
 		SameSite: http.SameSiteLaxMode,
 		Secure:   false,
-		HttpOnly: true,
+		HttpOnly: false,
 		Domain:   "localhost",
 	})
 

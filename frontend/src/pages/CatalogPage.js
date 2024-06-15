@@ -1,16 +1,16 @@
 import {css, html, LitElement} from "lit";
 import {gridStyles} from "../styles/global";
 
-class Lectures extends LitElement{
-    static styles = [gridStyles,  css``]
+class CatalogPage extends LitElement{
+    static styles = [...gridStyles,  css``]
 
     render() {
         return html`
-            <p>Read Page</p>
+            <p>Catalog Page</p>
         `
     }
 }
 
-customElements.define('read', Read);
+customElements.define('catalog-page', CatalogPage);
 
-export {Read};
+export {CatalogPage};

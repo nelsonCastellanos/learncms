@@ -1,33 +1,46 @@
-import { LitElement, html, css } from 'lit';
-import '@material/web/iconbutton/icon-button.js';
-import '@material/web/icon/icon.js';
-import '@material/web/list/list-item.js';
-import '@material/web/list/list.js';
-import { gridStyles } from "../styles/global";
+import {css, html, LitElement} from 'lit';
+import '@material/web/button/filled-button.js';
+import {gridStyles} from "../styles/global";
+
 
 class NavigationBar extends LitElement {
-    static styles = [gridStyles, css``];
+    static styles = [...gridStyles,  css`
+        .header{
+            height: 7vh;
+            color: #f0dedf;
+        }
+        
+        .app-icon{
+            height: 50px;
+        }
+    `];
+
+    handleLogin() {
+        const redirectURL = window.location.origin + '/protected';
+        window.location.href = `api/auth/google/login?redirect=${encodeURIComponent(redirectURL)}`;
+    }
 
     render() {
         return html`
-        <div class="row container">
-          <md-standard-icon-button class="col-3">
-            <md-icon>menu</md-icon>
-          </md-standard-icon-button>
-          <div class="col-6">
-            <img src="path/to/your/logo.png" alt="App Icon" class="app-icon" />
-          </div>
-          <div class="col-3">
-            <md-list>
-              <md-list-item class="nav-item">Precios</md-list-item>
-              <md-list-item class="nav-item">Iniciar Sesión</md-list-item>
-            </md-list>
-          </div>
-        </div>
-    `;
+            <navigation class="container">
+                <div>
+                    <nav class="flex justify-between p-5 align-center header">
+                        <div class="flex align-center">
+                            <a href="http://localhost:3000">
+                                <img src="assets/img.png" alt="App Icon" class="app-icon"/>
+                            </a>
+                            <h1>StoryLing</h1>
+                        </div>
+                        <div>
+                            <md-filled-button @click="${this.handleLogin}">Iniciar sesion</md-filled-button>
+                        </div>
+                    </nav>
+                </div>
+            </navigation>
+        `;
     }
 }
 
 customElements.define('navigation-bar', NavigationBar);
 
-export { NavigationBar };
+export {NavigationBar};
